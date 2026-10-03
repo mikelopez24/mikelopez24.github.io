@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Lopez | Portfolio Website</title>
+  <style>
+    /* Global CSS Styles & Variables */
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    /* Navigation Header */
+    header {
+      background-color: var(--card-bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Layout Containers */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    /* Hero & Personal Statement Section */
+    .hero {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .personal-statement {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 850px;
+      margin: 0 auto;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    /* Skills Showcase Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-category {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+    }
+
+    .skill-category h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background-color: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <nav>
+      <a href="#" class="logo">Michael Lopez</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero / Personal Statement Section -->
+    <section id="about" class="hero">
+      <h1>Hello, I'm Michael Lopez</h1>
+      <p class="personal-statement">
+        As a Rutgers Business School finance student, I am motivated by my desire to understand how financial decisions can create long-term opportunities and financial security, while pursuing my passion for investing and developing a career in finance and real estate.
+      </p>
+    </section>
+
+    <!-- Skills Showcase Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Professional & Personal Strengths</h3>
+          <div class="skill-tags">
+            <span class="tag">Ambitious</span>
+            <span class="tag">Driven</span>
+            <span class="tag">Analytical</span>
+            <span class="tag">Goal-oriented</span>
+            <span class="tag">Detail-oriented</span>
+            <span class="tag">Adaptable</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Core Competencies</h3>
+          <div class="skill-tags">
+            <span class="tag">Financial Analysis</span>
+            <span class="tag">Investment Strategy</span>
+            <span class="tag">Real Estate Valuation</span>
+            <span class="tag">Financial Modeling</span>
+            <span class="tag">Market Research</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Michael Lopez. Built and hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
